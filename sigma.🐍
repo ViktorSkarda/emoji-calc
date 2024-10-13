@@ -1,0 +1,26 @@
+import math as 🧮
+
+try:
+    1️⃣ = float(input("1️⃣: "))
+    2️⃣ = float(input("2️⃣: "))
+    🔣 = input("🔣 (+, -, *, /): ")
+
+    if 🔣 == "+":
+        🟰 = 1️⃣ + 2️⃣
+    elif 🔣 == "-":
+        🟰 = 1️⃣ - 2️⃣
+    elif 🔣 == "*":
+        🟰 = 1️⃣ * 2️⃣
+    elif 🔣 == "/":
+        if 2️⃣ == 0:
+            raise ZeroDivisionError("❌ Cannot divide by zero")
+        🟰 = 1️⃣ / 2️⃣
+    else:
+        raise ValueError("❌🔣")
+
+    print(f"🟰: {🟰}")
+
+except ValueError as e:
+    print(f"❌: {e}")
+except ZeroDivisionError as e:
+    print(e)
